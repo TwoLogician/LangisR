@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Hubs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="client-app\package.json" />
+    <Content Remove="client-app\tsconfig.json" />
+    <Content Remove="client-app\tsconfig.prod.json" />
+    <Content Remove="client-app\tsconfig.test.json" />
+    <Content Remove="client-app\tslint.json" />
+    <Content Remove="client-app\public\manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="client-app\.gitignore" />
+    <None Remove="client-app\README.md" />
+    <None Remove="client-app\images.d.ts" />
+    <None Remove="client-app\yarn.lock" />
+    <None Remove="client-app\public\favicon.ico" />
+    <None Remove="client-app\public\index.html" />
+    <None Remove="client-app\src\App.css" />
+    <None Remove="client-app\src\App.test.tsx" />
+    <None Remove="client-app\src\App.tsx" />
+    <None Remove="client-app\src\index.css" />
+    <None Remove="client-app\src\index.tsx" />
+    <None Remove="client-app\src\logo.svg" />
+    <None Remove="client-app\src\registerServiceWorker.ts" />
+  </ItemGroup>
+</Project>
